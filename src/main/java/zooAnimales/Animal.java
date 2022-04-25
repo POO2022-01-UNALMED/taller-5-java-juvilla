@@ -7,34 +7,34 @@ public class Animal {
 	private String habitad;
 	private String genero;
 	private Zona zona;
-	public String getnombre() {
+	public String getNombre() {
 		return nombre;
 	}
-	public void setnombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre=nombre;
 	}
-	public int getedad() {
+	public int getEdad() {
 		return edad;
 	}
-	public void setedad(int edad) {
+	public void setEdad(int edad) {
 		this.edad=edad;
 	}
-	public String gethabitad() {
+	public String getHabitad() {
 		return habitad;
 	}
-	public void sethabitad(String habitad) {
+	public void setHabitad(String habitad) {
 		this.habitad=habitad;
 	}
-	public String getgenero() {
+	public String getGenero() {
 		return genero;
 	}
-	public void setgenero(String genero) {
+	public void setGenero(String genero) {
 		this.genero=genero;
 	}
-	public Zona getzona() {
+	public Zona getZona() {
 		return zona;
 	}
-	public void setzona(Zona zona) {
+	public void setZona(Zona zona) {
 		this.zona=zona;
 	}
 	public Animal (String nombre,int edad,String habitad,String genero) {
@@ -42,22 +42,23 @@ public class Animal {
 		this.edad=edad;
 		this.habitad=habitad;
 		this.genero=genero;
+		totalAnimales++;
 	}
 	public Animal() {
 		
 	}
 	public String toString() {
 		if(zona==null){
-			return "Mi nombre es "+nombre+" tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
 					genero;
 		}
 		else{
-		return "Mi nombre es "+nombre+" tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
+		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
 				genero+", la zona en la que me ubico es "+zona;}
 	}
 	public String movimiento() {
 		return "desplazarse";
 	}
-	public String totalPorTipo() {return "Mamieros: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " +         Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios();}
+	public String totalPorTipo() {return "Mamieros: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios();}
 }
 

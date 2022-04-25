@@ -6,19 +6,19 @@ import java.util.List;
 import gestion.*;
 
 public class Ave extends Animal {
-	private static List<Ave> listado = new ArrayList<>();
+	private static ArrayList<Ave> listado = new ArrayList<Ave>();
 	public int halcones;
 	public int aguilas;
 	private String colorPlumas;
-	public void setcolorPlumas(String colorPlumas) {
+	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas=colorPlumas;
 	}
-	public String getcolorPlumas() {
+	public String getColorPlumas() {
 		return colorPlumas;
 	}
     public Ave (String nombre,int edad,String habitad,String genero,String colorPlumas) {
     	super(nombre,edad,habitad,genero);
-    	this.setcolorPlumas(colorPlumas);
+    	this.colorPlumas=colorPlumas;
     	listado.add(this);
 	}
     public Ave() {

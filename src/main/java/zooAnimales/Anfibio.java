@@ -5,19 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Anfibio extends Animal {
-	private static List<Anfibio> listado = new ArrayList<>();
+	private static ArrayList<Anfibio> listado = new ArrayList<Anfibio>();
 	public int ranas;
 	public int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
-public void setcolorPiel(String colorPiel) {
+public void setColorPiel(String colorPiel) {
 	this.colorPiel=colorPiel;
 }
-public String getcolorPiel() {
+public String getColorPiel() {
 	return colorPiel;
 }
-public void setvenenoso(boolean venenoso) {
+public void setVenenoso(boolean venenoso) {
 	this.venenoso=venenoso;
+}
+public boolean isVenenoso() {
+	return venenoso;
 }
 public Anfibio (String nombre,int edad,String habitad,String genero,String colorPiel,boolean venenoso) {
 	super(nombre,edad,habitad,genero);

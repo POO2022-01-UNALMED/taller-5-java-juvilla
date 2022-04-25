@@ -6,21 +6,21 @@ import java.util.List;
 import gestion.*;
 
 public class Reptil extends Animal {
-	private static List<Reptil> listado = new ArrayList<>();
+	private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
 	public int iguanas;
 	public int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-	public void setcolorEscamas(String colorEscamas) {
+	public void setColorEscamas(String colorEscamas) {
 		this.colorEscamas=colorEscamas;
 	}
-	public String getcolorEscamas() {
+	public String getColorEscamas() {
 		return colorEscamas;
 	}
-	public void setlargoCola(int largoCola) {
+	public void setLargoCola(int largoCola) {
 		this.largoCola=largoCola;
 	}
-	public int getlargoCola() {
+	public int getLargoCola() {
 		return largoCola;
 	}
 public Reptil (String nombre,int edad,String habitad,String genero,String colorEscamas,int largoCola) {
