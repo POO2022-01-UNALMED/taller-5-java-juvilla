@@ -37,12 +37,11 @@ public class Animal {
 	public void setzona(Zona zona) {
 		this.zona=zona;
 	}
-	public Animal (String nombre,int edad,String habitad,String genero,Zona zona) {
+	public Animal (String nombre,int edad,String habitad,String genero) {
 		this.nombre=nombre;
 		this.edad=edad;
 		this.habitad=habitad;
 		this.genero=genero;
-		this.zona=zona;
 	}
 	public Animal() {
 		
@@ -59,5 +58,6 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
+	public String totalPorTipo() {return "Mamieros: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " +         Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios();}
 }
 
