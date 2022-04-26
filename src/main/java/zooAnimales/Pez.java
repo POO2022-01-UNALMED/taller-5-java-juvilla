@@ -7,8 +7,8 @@ import gestion.*;
 
 public class Pez extends Animal {
 	private static ArrayList<Pez> listado = new ArrayList<Pez>();
-	public int salmones;
-	public int bacalaos;
+	public static int salmones;
+	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
 public Pez (String nombre,int edad,String habitad,String genero,
@@ -25,12 +25,12 @@ public Pez() {
 public String movimiento() {
 	return "nadar";
 }
-public Pez crearSalmon(String nombre,int edad,String genero ) {
+public static Pez crearSalmon(String nombre,int edad,String genero ) {
 	Pez A=new Pez(nombre,edad,"oceano",genero,"rojo",6);
 	salmones++;
 	return A;
 }
-public Pez crearBacalao(String nombre,int edad,String genero ) {
+public static Pez crearBacalao(String nombre,int edad,String genero ) {
 	Pez A=new Pez(nombre,edad,"oceano",genero,"gris",6);
 	bacalaos++;
 	return A;

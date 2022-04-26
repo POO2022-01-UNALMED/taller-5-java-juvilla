@@ -7,8 +7,8 @@ import gestion.*;
 
 public class Reptil extends Animal {
 	private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	public void setColorEscamas(String colorEscamas) {
@@ -29,12 +29,12 @@ public Reptil (String nombre,int edad,String habitad,String genero,String colorE
 	this.largoCola=largoCola;
 	listado.add(this);
 	}
-public Reptil crearIguana(String nombre,int edad,String genero ) {
+public static Reptil crearIguana(String nombre,int edad,String genero ) {
 	Reptil A=new Reptil(nombre,edad,"humedal",genero,"verde",3);
 	iguanas ++;
 	return A;
 }
-public Reptil crearSerpiente(String nombre,int edad,String genero ) {
+public static Reptil crearSerpiente(String nombre,int edad,String genero ) {
 	Reptil A=new Reptil(nombre,edad,"jungla",genero,"blanco",1);
 	serpientes ++;
 	return A;

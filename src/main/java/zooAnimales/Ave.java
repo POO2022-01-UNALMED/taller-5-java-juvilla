@@ -7,8 +7,8 @@ import gestion.*;
 
 public class Ave extends Animal {
 	private static ArrayList<Ave> listado = new ArrayList<Ave>();
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas=colorPlumas;
@@ -26,12 +26,12 @@ public class Ave extends Animal {
     public String movimiento() {
 		return "volar";
 	}
- public Ave crearHalcon(String nombre,int edad,String genero) {
+ public static Ave crearHalcon(String nombre,int edad,String genero) {
 	 Ave A=new Ave(nombre,edad,"montanas",genero,"cafe glorioso");
 	 halcones++;
 	 return A;
 	 }
- public Ave crearAguila(String nombre,int edad,String genero) {
+ public static Ave crearAguila(String nombre,int edad,String genero) {
 	 Ave A=new Ave(nombre,edad,"montanas",genero,"blanco y amarillo");
 	 aguilas++;
 	 return A;

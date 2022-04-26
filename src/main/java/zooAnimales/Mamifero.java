@@ -7,8 +7,8 @@ import gestion.*;
 
 public class Mamifero extends Animal {
 	private static ArrayList<Mamifero> listado = new ArrayList<Mamifero>();
-	public int caballos;
-	public int leones;
+	public static int caballos;
+	public static int leones;
 	private boolean pelaje;
 	private int patas;
 public Mamifero (String nombre,int edad,String habitad,String genero,boolean pelaje,int patas) {
@@ -19,12 +19,12 @@ public Mamifero (String nombre,int edad,String habitad,String genero,boolean pel
 	}
 public Mamifero () {	
 }
-public Mamifero crearCaballo(String nombre,int edad,String genero) {
+public static Mamifero crearCaballo(String nombre,int edad,String genero) {
 	Mamifero A=new Mamifero(nombre,edad,"pradera",genero,true,4);
 	caballos ++;
 	return A;
 }
-public Mamifero crearLeon(String nombre,int edad,String genero) {
+public static Mamifero crearLeon(String nombre,int edad,String genero) {
 	Mamifero A=new Mamifero(nombre,edad,"selva",genero,true,4);
 	leones ++;
 	return A;
