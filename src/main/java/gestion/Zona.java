@@ -1,12 +1,11 @@
 package gestion;
 import java.util.ArrayList;
-import java.util.List;
 
 import zooAnimales.*;
 public class Zona {
 	private String nombre;
 	private  Zoologico zoo;
-	private static ArrayList<Animal> animales = new ArrayList<Animal>();
+	private ArrayList<Animal> animales = new ArrayList<Animal>();
 	public Zona(String nombre,Zoologico zoo) {
 		this.nombre=nombre;
 		this.zoo=zoo;
@@ -31,7 +30,7 @@ public class Zona {
 	public void setZoo(Zoologico zoo) {
 		this.zoo=zoo;
 	}
-	public List<Animal> getAnimales(){
+	public ArrayList<Animal> getAnimales(){
 		return animales;
 	}
 	}

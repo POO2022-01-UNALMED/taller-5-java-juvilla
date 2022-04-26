@@ -1,10 +1,10 @@
 package zooAnimales;
-import gestion.*;
+import gestion.Zona;
 public class Animal {
 	private static int totalAnimales;
 	private String nombre;
 	private int edad;
-	private String habitad;
+	private String habitat;
 	private String genero;
 	private Zona zona;
 	public String getNombre() {
@@ -19,11 +19,11 @@ public class Animal {
 	public void setEdad(int edad) {
 		this.edad=edad;
 	}
-	public String getHabitad() {
-		return habitad;
+	public String getHabitat() {
+		return habitat;
 	}
-	public void setHabitad(String habitad) {
-		this.habitad=habitad;
+	public void setHabitat(String habitat) {
+		this.habitat=habitat;
 	}
 	public String getGenero() {
 		return genero;
@@ -37,10 +37,10 @@ public class Animal {
 	public void setZona(Zona zona) {
 		this.zona=zona;
 	}
-	public Animal (String nombre,int edad,String habitad,String genero) {
+	public Animal (String nombre,int edad,String habitat,String genero) {
 		this.nombre=nombre;
 		this.edad=edad;
-		this.habitad=habitad;
+		this.habitat=habitat;
 		this.genero=genero;
 		totalAnimales++;
 	}
@@ -49,11 +49,11 @@ public class Animal {
 	}
 	public String toString() {
 		if(zona==null){
-			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+ 
 					genero;
 		}
 		else{
-		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitad+" y mi genero es "+ 
+		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+ 
 				genero+", la zona en la que me ubico es "+zona;}
 	}
 	public String movimiento() {
